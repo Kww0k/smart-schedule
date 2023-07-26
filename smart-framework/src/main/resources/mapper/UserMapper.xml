@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.test.mapper.UserMapper">
+    <select id="selectStore" resultType="java.lang.String">
+        SELECT
+            si.`name`
+        FROM store_info si LEFT JOIN info_user iu ON si.`id` = iu.`info_id`
+            LEFT JOIN sys_user su ON iu.`user_id` = su.`id`
+        WHERE su.`id` = #{id}
+        and si.`del_flag` = 0
+    </select>
+    <select id="selectRole" resultType="java.lang.String">
+        SELECT
+            sr.`role_name`
+        FROM sys_user su
+            LEFT JOIN sys_user_role syr ON su.`id` = syr.`user_id`
+            LEFT JOIN sys_role sr ON syr.`role_id` = sr.`id`
+                                   WHERE su.`id` = #{id}
+        and sr.`del_flag` = 0
+    </select>
+    <select id="selectInfo" resultType="com.test.domain.entity.User">
+        SELECT su.id, su.`name`
+        FROM store_info si
+                 LEFT JOIN info_user iu on si.id = iu.info_id
+                 LEFT JOIN sys_user su on iu.user_id = su.id
+        WHERE si.id = #{storeId}
+          AND su.del_flag = 0
+    </select>
+</mapper>

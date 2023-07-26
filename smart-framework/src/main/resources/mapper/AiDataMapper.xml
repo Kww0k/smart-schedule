@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.test.mapper.AiDataMapper">
+    <select id="selectData" resultType="com.test.domain.entity.AiData">
+        SELECT *
+        FROM info_data id
+                 LEFT JOIN
+             ai_data ad
+             ON
+                 id.`data_id` = ad.id
+        WHERE id.`info_id` = #{storeId}
+          and ad.`date` = #{end}
+    </select>
+</mapper>

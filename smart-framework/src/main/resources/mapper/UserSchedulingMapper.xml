@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.test.mapper.UserSchedulingMapper">
+    <select id="selectData" resultType="com.test.domain.entity.UserScheduling">
+        SELECT
+            us.*
+        FROM
+            user_scheduling us
+                LEFT JOIN scheduling_days sd ON us.scheduling_id = sd.id
+        WHERE
+            us.user_id = #{id}
+          AND
+            sd.date
+        BETWEEN #{startDate} AND #{endDate}
+    </select>
+    <select id="selectDays" resultType="com.test.domain.entity.Days">
+        SELECT
+            sd.*
+        FROM
+            user_scheduling us
+                LEFT JOIN scheduling_days sd ON us.scheduling_id = sd.id
+        WHERE
+            us.user_id = #{id}
+          AND
+            sd.date
+                BETWEEN #{startDate} AND #{endDate}
+    </select>
+</mapper>

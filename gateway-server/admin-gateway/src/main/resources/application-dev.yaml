@@ -1,0 +1,64 @@
+server:
+  port: 8600
+spring:
+  application:
+    name: adminGatewayService
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.31.9:8848
+    gateway:
+      routes:
+        - id: aidata-service
+          uri: http://localhost:9001
+          predicates:
+            - Path=/aiData/**
+        - id: articles-service
+          uri: http://localhost:9101
+          predicates:
+            - Path=/article/**
+        - id: echarts-service
+          uri: http://localhost:9201
+          predicates:
+            - Path=/echarts/**
+        - id: file-service
+          uri: http://localhost:9301
+          predicates:
+            - Path=/file/**
+        - id: menu-service
+          uri: http://localhost:9401
+          predicates:
+            - Path=/menu/**
+        - id: role-service
+          uri: http://localhost:9501
+          predicates:
+            - Path=/role/**
+        - id: rule-service
+          uri: http://localhost:9601
+          predicates:
+            - Path=/rule/**
+        - id: schedules-service
+          uri: http://localhost:9701
+          predicates:
+            - Path=/schedule/**
+        - id: simple-service
+          uri: http://localhost:9801
+          predicates:
+            - Path=/simple/**
+        - id: store-service
+          uri: http://localhost:9901
+          predicates:
+            - Path=/store/**
+        - id: user-service
+          uri: http://localhost:10001
+          predicates:
+            - Path=/user/**
+        - id: apply-service
+          uri: http://localhost:10101
+          predicates:
+            - Path=/apply/**
+        - id: auth-service
+          uri: http://localhost:8201
+          predicates:
+            - Path=/auth/**
+

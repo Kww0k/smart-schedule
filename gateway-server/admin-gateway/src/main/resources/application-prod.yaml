@@ -1,0 +1,10 @@
+server:
+  port: 8600
+spring:
+  application:
+    name: userGatewayService
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.31.9:8848
+

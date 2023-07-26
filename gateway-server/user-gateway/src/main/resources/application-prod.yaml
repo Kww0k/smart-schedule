@@ -1,0 +1,27 @@
+server:
+  port: 8500
+spring:
+  application:
+    name: userGatewayService
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.31.9:8848
+    gateway:
+      routes:
+        - id: register-service
+          uri: http://localhost:7801
+          predicates:
+            - Path=/register/**
+        - id: article-service
+          uri: http://localhost:7701
+          predicates:
+            - Path=/article/**
+        - id: schedule-service
+          uri: http://localhost:7901
+          predicates:
+            - Path=/schedule/**
+        - id: auth-service
+          uri: http://localhost:8201
+          predicates:
+            - Path=/auth/**

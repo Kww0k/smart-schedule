@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/admin-server/aidata-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-server/allSchedule-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-server/apply-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-server/articles-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-server/echarts-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-server/file-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-server/menu-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-server/role-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-server/rule-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-server/schedules-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-server/simple-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-server/store-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-server/user-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/auth-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway-server/admin-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway-server/user-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateway-server/user-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hystrix-dashboard/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/manage-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/role-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rule-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ruleManage-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scheduling-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/schedulingManage-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/simple-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart-framework/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/smart-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/store-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/storeMange-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/storeRule-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/storeSimple-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/storeUser-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-server/article-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-server/auth/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-server/info-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-server/person-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-server/register-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-server/schedule-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/userManage-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/userRole-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/userScheduling-service/src/main/java" charset="UTF-8" />
+  </component>
+</project>

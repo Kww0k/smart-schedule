@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/auth-service/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway-server/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/admin-server/allSchedule-service/pom.xml" />
+        <option value="$PROJECT_DIR$/admin-service/aiData-service/pom.xml" />
+        <option value="$PROJECT_DIR$/data-service/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/hystrix-dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/manage-service/pom.xml" />
+        <option value="$PROJECT_DIR$/role-service/pom.xml" />
+        <option value="$PROJECT_DIR$/rule-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ruleManage-service/pom.xml" />
+        <option value="$PROJECT_DIR$/scheduling-service/pom.xml" />
+        <option value="$PROJECT_DIR$/schedulingManage-service/pom.xml" />
+        <option value="$PROJECT_DIR$/simple-service/pom.xml" />
+        <option value="$PROJECT_DIR$/smart-service/pom.xml" />
+        <option value="$PROJECT_DIR$/storeMange-service/pom.xml" />
+        <option value="$PROJECT_DIR$/storeRule-service/pom.xml" />
+        <option value="$PROJECT_DIR$/storeSimple-service/pom.xml" />
+        <option value="$PROJECT_DIR$/storeUser-service/pom.xml" />
+        <option value="$PROJECT_DIR$/userManage-service/pom.xml" />
+        <option value="$PROJECT_DIR$/userRole-service/pom.xml" />
+        <option value="$PROJECT_DIR$/userScheduling-service/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="zulu-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

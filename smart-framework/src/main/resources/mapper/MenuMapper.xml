@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.test.mapper.MenuMapper">
+    <select id="selectMenuById" resultType="com.test.domain.entity.Menu">
+        SELECT
+            m.id, m.parent_id, m.menu_name, m.path, m.icon
+        FROM
+            `sys_user_role` ur
+        LEFT JOIN `sys_role_menu` rm on ur.`role_id` = rm.`role_id`
+        left join `sys_menu` m on m.`id` = rm.`menu_id`
+        where
+            ur.`user_id` = #{userId} AND
+            m.`status` = 0 AND
+            m.`del_flag` = 0
+    </select>
+</mapper>

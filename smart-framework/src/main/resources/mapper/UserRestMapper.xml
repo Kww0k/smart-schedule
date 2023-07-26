@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.test.mapper.UserRestMapper">
+    <select id="selectNameById" resultType="java.lang.String">
+        select su.name
+        from user_rest ur
+                 left join sys_user su on ur.user_id = su.id
+        where ur.rest_id = #{id}
+          and su.`del_flag` = 0
+    </select>
+    <select id="selectInfo" resultType="com.test.domain.entity.Rest">
+        select sr.*
+        from user_rest ur
+                 left join sys_rest sr on ur.rest_id = sr.id
+        where ur.user_id = #{id}
+          and sr.date = #{date}
+          and sr.`del_flag` = 0
+    </select>
+    <select id="selectDate" resultType="com.test.domain.entity.UserRest">
+        select sr.*
+        from user_rest ur
+                 left join sys_rest sr on ur.rest_id = sr.id
+        where sr.date between #{startTime} and #{endTime}
+          and ur.user_id = #{id}
+            and sr.`del_flag` = 0
+    </select>
+</mapper>

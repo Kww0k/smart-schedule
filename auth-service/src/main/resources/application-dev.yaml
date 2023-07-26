@@ -1,0 +1,32 @@
+server:
+  port: 8201
+spring:
+  application:
+    name: userAuthService
+  mail:
+    username: E19858591692@163.com
+    password: ILMWDPNGFMTVJUEG
+    host: smtp.163.com
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.31.9:3306/test
+    username: root
+    password: 123456
+  redis:
+    host: 192.168.31.9
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.31.9:8848
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-field: delFlag
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+      id-type: auto
